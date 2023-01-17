@@ -1,38 +1,505 @@
-.App {
-  text-align: center;
+
+.brand {
+color: white;
+  width: 1372px;
+  height: 447px;
+  margin-top: -773px;
+  padding: 61px;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand span{
+  color: rgb(109, 8, 8);
+ font-weight: bold;
+}
+nav{
+  position: absolute;
+}
+nav ul{
+  margin-top: -397px;
+  margin-left: 292px;
+    border: 1px solid #fff;
+    height: 50px;
+   
+
+}
+nav ul li{
+text-decoration: none;
+display: inline-block;
+padding: 10px 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+ cursor: pointer;
+  
+}
+nav ul li  a:hover{
+  color:rgb(109, 8, 8);
+  transition: .3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#lom{
+  width: 109%;
+
+  height: 282%;
+ 
+  margin-left: -1px;
+overflow: hidden;
+margin-top: -106px;
+
+}
+#lili{
+  margin-left: 245px;
+padding: 3px 10px ;
+width: 16%;
+border-radius: 20px;
+border: none;
+outline: none;
+background: rgba(170, 162, 162, 0.3);
+position: absolute;
+
+left: 757px;
+margin-top: -60px;
+
+}
+#title{
+  color: #fff;
+  margin-top: 100px;
+  margin-left: 149px;
+  font-weight: bold;
+}
+#para{
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 149px;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#title span{
+  color:rgb(109, 8, 8);
+}
+.kiko{
+  margin-left: 562px;
+  margin-top: -34px
+  ;
+}
+.glg{
+  margin-left: 145px;
+}
+#clo{
+color: white;
+margin-left: 120px;
+margin-top: -10px;
+}
+#jiji{
+  margin-left: 170px;
+}
+#milm{
+margin-left: 170px;
+}
+#lop{
+  margin-left: 10px;
+}
+#kilo{
+  margin-left: 905px;
+    margin-top: -51px;
+    position: absolute;
+}
+#sisi{
+ 
+  margin-left: 965px;
+    position: absolute;
+    top: -695px;
+}
+#volo{
+  position: absolute;
+  margin-left: 961px;
+  top: 19px;
+  text-decoration: none;
+}
+.fat{
+  background-color:black;
+  margin-top: -45px;
+  height: 500px;
+}
+.fat h2{
+  color: rgb(109, 8, 8);
+  margin-left: 122px;
+}
+.box{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  background-color: black;
+  height: 1190px;
+
+}
+.hlil{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 902px;
+}
+.card-text{
+  font-size: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-body{
+  height: 160px;
+  background-color: black;
+}
+.card{
+  
+  margin-top: 521px;
+ 
+}
+.hlil{
+  background-color: black;
+  height: 942px;
+  margin-top: -479px;
+}
+.hanen{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 902px;
+}
+.ahmed{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 902px;
+  margin-top: -556px;
+}
+#saf{
+position: absolute;
+margin-top: 76px;
+    margin-left: 94px;
+}
+.hlil h1{
+  color: white;
+ margin-left: -1047px;
+  margin-top: 471px;
+  position: absolute;
+  
+}
+#glk{
+  color: white;
+  margin-left: -1115px;
+  margin-top: 1900px;
+  position: absolute;
+  
+}
+.angry h1{
+  position: absolute;
+  margin-top: 17px;
+  color: white;
+  margin-left: 75px;
+  
+}
+.angry{
+  background-color: black;
+  height: 697px;
+  margin-top: -1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.cc{
+  width: 430px;
+  height: 250px;
+  box-shadow: 5px 15px 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0px 20px 10px 20px;
+}
+.cc img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+ 
+
+}
+.row img{
+ width: 328px;
+  height: 218px;
+  margin-top: 127px;
+  overflow: hidden;
+ 
+}
+.bju img{
+  width: 302px;
+  height: 218px;
+  margin-top: 127px;
+ 
+}
+.bju{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.floii{
+  display: flex;
+  justify-content: space-around;
+}
+.floii img{
+  width: 302px;
+  height: 218px;
+  margin-top: 127px;
+}
+#ffly{
+  margin-left: -1021px;
+  position: absolute;
+  margin-top: 212px;
+}
+#ffly:hover{
+  cursor: pointer;
+  color: transparent;
+}
+
+#nn{
+  position: absolute;
+    margin-top: 208px;
+    margin-left: -325px;
+}
+#nn:hover{
+  cursor: pointer;
+  color: transparent;
+}
+#lyl{
+  position: absolute;
+  margin-top: 208px;
+  margin-left: 335px;
+}
+#lyl:hover{
+  cursor: pointer;
+  color: transparent;
+}
+
+#kk{
+  position: absolute;
+  margin-top: 208px;
+  margin-left: 1041px; 
+}
+#kk:hover{
+  cursor: pointer;
+  color: transparent;
+}
+#ll{
+  position: absolute;
+  color: white;
+  margin-top: 312px;
+  margin-left: 131px;
+}
+#mm{
+  position: absolute;
+  color: white;
+  background-color: gray;
+  width: 46px;
+  margin-top: 312px;
+  margin-left: -1269px;
+}
+
+#pp{
+  position: absolute;
+  color: white;
+  margin-top: 312px;
+  margin-left: 782px;
+}
+#cx{
+  position: absolute;
+  color: white;
+  background-color: gray;
+  width: 46px;
+  margin-top: 312px;
+  margin-left: -593px;
+}
+#aa{
+  position: absolute;
+  color: white;
+  margin-top: 312px;
+  margin-left: 1473px;
+
+}
+#qq{
+  position: absolute;
+  color: white;
+  background-color: gray;
+  width: 46px;
+  margin-top: 312px;
+  margin-left: 94px;
+}
+#dd{
+
+position: absolute;
+color: white;
+background-color: gray;
+width: 46px;
+margin-top: 312px;
+margin-left: 776px;
+}
+#jj{
+  position: absolute;
+  color: white;
+  margin-top: 312px;
+  margin-left: 2146px;
+}
+#fd{
+  position: absolute;
+color: white;
+background-color: gray;
+width: 46px;
+margin-top: 312px;
+margin-left: 776px;
+}
+#lo{
+  margin-left: 1191px;
+  color: white;
+  margin-top: -46px;
+}
+
+.car{
+  position: absolute;
+     margin-top: 125px;
+      margin-left: 412px;
+}
+#saf:hover{
+  color: transparent;
+}
+.ime{
+  margin-left: 110px;
+  margin-top: 9px;
+}
+.ime p{
+  position: absolute;
+  color: rgb(161, 158, 158);
+ 
+  margin-left: -119px;
+  margin-top: 9px;
+}
+.Fa{
+  margin-left: 110px;
+  margin-top: 1px;
+}
+.Fa p{
+  position: absolute;
+  color: rgb(161, 158, 158);
+ font-size: 10px;
+  margin-left: -119px;
+  margin-top: 9px;
+}
+#video1{
+  HEIGHT: 400px;
+  width: 643px;
+  margin-top: 1040px;
+  margin-left: -755px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+
+}
+.rad p{
+  position: absolute;
+  margin-left: -1236px;
+  margin-top: -219px;
+  font-size: 15px;
+}
+#gg{
+  position: absolute;
+  margin-left: -1236px;
+  margin-top: -293px;
+  font-weight: bold;
+ font-size: 18px;
+
+}
+#gg span{
+  color: rgb(109, 8, 8);
+}
+#lo:hover{
+  color: rgb(109, 8, 8);
+}
+#po{
+  margin-left: 53px;
+  margin-top: 100px;
+  clip-path: circle();
+}
+#lii{
+  margin-left: 31px;
+  margin-top: 100px;
+  clip-path: circle();
+}
+#fam{
+  margin-left: 31px;
+  margin-top: 100px;
+  clip-path: circle();
+}
+#ne{
+  margin-left: 31px;
+  margin-top: 100px;
+  clip-path: circle();
+}
+#x{
+  margin-left: 31px;
+  clip-path: circle();
+  margin-top: 100px;
+}
+#d{
+  margin-left: 31px;
+  clip-path: circle();
+  margin-top: 100px;
+}
+#o{
+  margin-left: 31px;
+  clip-path: circle();
+  margin-top: 100px;
+}
+
+
+.ouda h5{
+display: inline-block;
+margin: 28px;
+color: white;
+
+}
+.marw{
+  background-color: black;
+  height: 266px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.tres h5{
+  color: white;
+  margin-left: 257px;
+    margin-top: 35px;
+}
+
+ 
+
+
+.jolie h6{
+  color: white;
+  margin-left: 257px;
+}
+.imeb h5{
+  color: white;
+  margin-left: 796px;
+  margin-top: -145px;
+}
+.bell {
+
+  margin-left: 796px;
+  color: white;
+}
+.moll{
+  margin-left: 796px;
+  color: white;
 }
