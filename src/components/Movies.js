@@ -4,9 +4,14 @@ import Card from 'react-bootstrap/Card';
 import ReactStars from "react-rating-stars-component";
 import Mod from './Mod';
 import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Saf from './Saf';
+import Kids1 from './Kids1';
+import Nes from './Nes';
+import Foter from './Foter';
 
 
-function Movies({text, rate}) {
+function Movies({text, rate,}) {
     const [List, setList] = useState([
       {
         name: "The Godfather",
@@ -58,12 +63,15 @@ function Movies({text, rate}) {
         rating: 2,
       },
     ]);
-  
   return (
     <div>
+          <Saf/>
    <Mod List={List} setList={setList}/>
   <div className='ahmed' id="bb">
-{List.filter((el)=>el.name.toLowerCase().includes(text.toLowerCase())&&el.rating>=rate).map((el)=><Card style={{ width: '13rem',marginTop:'590px',height: '20rem'}}>
+ 
+{List.filter((el)=>el.name.toLowerCase().includes(text.toLowerCase())&&el.rating>=rate).map((el)=> <Link to={`/Trailer/${el.name}`}><Card style={{ width: '13rem',marginTop:'590px',height: '20rem'}}>
+     
+     
       <Card.Img variant="top" src={el.posterurl} style={{  height:"190px",minwidth:"100px", maxwidth:"220px",minheight:"100px", maxHeight:"203px" }} />
       <svg id="saf" xmlns="http://www.w3.org/2000/svg" color="rgb(109, 8, 8)" width="40" height="40" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
       <Card.Body>
@@ -86,14 +94,21 @@ function Movies({text, rate}) {
       </div>
         </Card.Text>
       </Card.Body>
-    </Card>)}
+    </Card>
+    </Link>)}
     <div className='rad'>
       <video id="video1" src='/video10.mp4' autoPlay muted></video>
       <p id='gg'>EVIL <span>DEAD </span>RISE</p>
       <p>A woman finds herself in a fight for her life when <br></br>an ancient book gives birth to bloodthirsty <br></br>demons that run amok in a Los Angeles apartment building.</p>
     </div>
+   
     </div>
+    
+    <Kids1/>
+    <Nes/>
+    <Foter/>
     </div>
+  
 
   )
 }

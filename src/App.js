@@ -10,60 +10,76 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Movies from './components/Movies';
 import ReactStars from "react-rating-stars-component";
 import Foter from './components/Foter';
+import About from './components/About';
+import Contact from './components/Contact';
+import Trailer from './components/Trailer';
+import Kids1 from './components/Kids1';
 
 
 
 function App() {
-  const [students, setstudent] = useState([
-    
-      { name:"The Boss baby ", age:"Seven-year-old Tim gets jealous when his parents give all their attention to his little brother. Tim soon learns .", img:"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoXtgMlVpiOtLWBSauHiGoZfQsMRVU3l4Ep2hJ8KDUEYqqFwMu"},
-      { name: "Puss in Boots", age:"Puss teams up with his friends, Humpty Dumpty and Kitty Softpaws, in order to defeat two criminals, Jack and Jill.", img:"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTed4JfrwRd2DVjEcT5vqPa2w6MYHkYLJlE-Amlk4Pu6faJYLXY"},
-      { name:"The Star", age:"Bo, a donkey, is bored of his regular life and wants to do something different. He sets on an adventurous.", img:"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9A_EBDKhmsfp_thrvdz_Kkkplg13yXRSQp19cvBCPwH7Z45P-"},
-      { name:"Matilda", age:"Matilda, an extraordinary girl armed with a sharp mind and a vivid imagination, dares to take.", img:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDNhOJrEpRgUfdO3-V0YtFEj2A-sNpuLtCgHptc2WFAAcPYMUp"},
-      { name:"Vivo", age:"To fulfil his owner's last wish, Vivo, a pet kinkajou, ventures out on a musical adventure where he makes.", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZeTe2a8BhOoh3pUsa-VqHebJw24vUJPdmQu6WIIzOfPcGy6k"},
-      { name:"The Angry Birds Movie", age:"Bird and Piggy Islands are under threat when Zeta, the leader of Eagle Island, wants to occupy them.", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_PJ2VxellzwzllH-9xlRKCBTk6cp6a1JonQq_yBL6sCXBodJU"}
-    ]);
+  const [Lists, setLists] = useState([
+    {
+      name: "The Godfather",
+      posterurl:
+        "https://m.media-amazon.com/images/M/MV5BYWNlN2U4YjQtMzI3NC00ZjkxLWEwMTItYWRlNDUxYTYwYjVlXkEyXkFqcGdeQWpvaG5oYXJ0._V1_UX477_CR0,0,477,268_AL_.jpg",
+      description:
+        "The Godfather is an American film series that consists of three crime films directed by Francis Ford Coppola inspired by the 1969 novel.",
+      rating: 5,
+    },
+    {
+      name: "Taxi Driver",
+      posterurl:
+        "https://www.indiewire.com/wp-content/uploads/2016/04/taxi-driver-1.jpg?w=670&h=377&crop=1",
+      description:
+        "Travis, an ex-marine and Vietnam veteran, works as a taxi driver in New York City. One day, he is driven to save an underage prostitute.",
+      rating: 3,
+    },
+    {
+      name: "Fight Club",
+      posterurl:
+        "https://img.huffingtonpost.com/asset/5bb49916220000ba01dc2840.jpeg?ops=scalefit_630_noupscale",
+      description:
+        "Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman.",
+      rating: 5,
+    },
+    {
+      name: "The Lord of the Rings",
+      posterurl:
+        "https://imgix.bustle.com/uploads/image/2020/1/21/7f69561d-3863-4b82-8196-f6bfd3074f03-lord-of-the-rings-frodo-sam-ftr.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg",
+      description:
+        "The Lord of the Rings is a film series of three epic fantasy adventure films directed by Peter Jackson, based on the novel written by J. R. R. Tolkien.",
+      rating: 5,
+    },
+  
+    {
+      name: "Dachra",
+      posterurl:
+        "https://cdn.nawaat.org/wp-content/uploads/2018/11/DACHRA-3-2000px.jpg",
+      description:
+        "A young journalism student and her friends become trapped in an isolated village while trying to solve a gruesome criminal.",
+      rating: 5,
+    },
+    {
+      name: "Paper Lives",
+      posterurl:
+        "http://www.doyouknowturkey.com/wp-content/uploads/2021/02/C%CC%A7ag%CC%86atay-Ulusoy-is-acting-as-Mehmet-in-Kag%CC%86ittan-Hayatlar-Papar-Lives-Turkish-original-film-on-Netflix.jpg",
+      description:
+        "Mehmet runs a solid waste warehouse in an impoverished Istanbul neighbourhood, where he helps everyone in need, especially.",
+      rating: 2,
+    },
+  ]);
     const [text, settext] = useState("")
     const [rate, setrate] = useState("")
   return (
     <div className="App">
       <Navbar settext={settext} setrate={setrate}/>
-      <Saf/>
-      <Movies text={text} rate={rate}/>
-     
-   
+      <Routes>
+        <Route path="/" element={ <Movies text={text} rate={rate}/> } />
+        <Route path="/Trailer/:name" element={ <Trailer Lists={Lists}/>} />
+      </Routes>
 <div>
-  
     </div>
-    <div className="box">
- 
-      {students.map((el)=><Card style={{ width: '13rem',marginTop:'729px',height:'22rem',}}>
-      <Card.Img id="vol" variant="top" src={el.img} style={{minwidth:"100px", maxwidth:"220px",minheight:"100px", maxHeight:"203px" }} />
-      <svg id="saf" xmlns="http://www.w3.org/2000/svg" color="rgb(109, 8, 8)" width="40" height="40" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
-
-      <Card.Body>
-        <Card.Title style={{color:"white", fontSize:"16px"}}>{el.name}</Card.Title>
-        <Card.Text>
-         {el.age}
-        </Card.Text>
-        <div className="Fa">
-         <p>1h 30min</p>
-      <ReactStars 
-    count={4}
-    size={18}
-    value={3}
-    isHalf={true}
-    emptyIcon={<i className="far fa-star"></i>}
-    halfIcon={<i className="fa fa-star-half-alt"></i>}
-    fullIcon={<i className="fa fa-star"></i>}
-    activeColor="#ffd700"
-  ReactStars/>
-      </div>
-      </Card.Body>
-    </Card>)}
-    </div>
-    <Nes/>
-    <Foter/>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { useState } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 
 function Saf() {    
@@ -85,9 +86,7 @@ function Saf() {
         </Card.Text>
       </Card.Body>
     </Card>)}
-    
     </div>
-     
 
   )
 }

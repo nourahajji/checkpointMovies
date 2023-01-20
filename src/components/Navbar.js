@@ -2,6 +2,7 @@ import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
 
 function Navbar({settext,setrate}) {
@@ -15,7 +16,9 @@ function Navbar({settext,setrate}) {
     <li> <a href="#bb">Séries</a></li>
     <li> <a href="#video1">Tv shows</a></li>
     <li> <a href="#vol">Kids</a></li>
+    <li> <a href="">About</a></li>
     <li> <a href="#ww">Cast</a></li>
+    <li> <Link to="/contact">Contact</Link></li>
     <div className="kiko">
   <ReactStars 
     count={5}
@@ -39,6 +42,7 @@ function Navbar({settext,setrate}) {
   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
 </svg>
 </a>
+
  </ul>
  <h1 id="title">M<span>3</span>GAN</h1>
  <p id="para">The story follows Gemma, a roboticist working at a toy company,<br></br> who suddenly becomes the guardian of her eight-year-old <br></br>niece, Cady. Cady loses her parents in an accident<br></br> and is deeply grieving.<br></br>92% liked this film<br></br>January 6, 2023</p>
