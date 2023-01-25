@@ -9,6 +9,7 @@ import Saf from './Saf';
 import Kids1 from './Kids1';
 import Nes from './Nes';
 import Foter from './Foter';
+import My from './My';
 
 
 function Movies({text, rate,}) {
@@ -65,6 +66,7 @@ function Movies({text, rate,}) {
     ]);
   return (
     <div>
+         <My/>
           <Saf/>
    <Mod List={List} setList={setList}/>
   <div className='ahmed' id="bb">
@@ -101,9 +103,7 @@ function Movies({text, rate,}) {
       <p id='gg'>EVIL <span>DEAD </span>RISE</p>
       <p>A woman finds herself in a fight for her life when <br></br>an ancient book gives birth to bloodthirsty <br></br>demons that run amok in a Los Angeles apartment building.</p>
     </div>
-   
     </div>
-    
     <Kids1/>
     <Nes/>
     <Foter/>

@@ -1,6 +1,6 @@
 .wrapper {
     height: 5vh;
-    padding-top: 10px;
+    padding-top: 120px;
     /* This part is important for centering the content */
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     display: inline-block;
     text-decoration: none;
     padding: 15px;
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: transparent;
     border-radius: 3px;
     text-transform: uppercase;

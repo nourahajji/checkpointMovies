@@ -62,7 +62,7 @@ function Saf() {
     <div className='hlil'>
       <h1>Séries</h1>
       <h1 id="glk">Kids</h1>
-      {movies.map((el)=><Card style={{ width: '13rem',marginTop:'590px',height: '20rem'}}>
+      {movies.map((el)=><Card id='ines' style={{ width: '13rem',marginTop:'691px',height: '20rem'}}>
       <Card.Img variant="top" src={el.posterurl} style={{height:"190px",minwidth:"50px", maxwidth:"50px",minheight:"50px", maxHeight:"300px" }} />
       <svg id="saf" xmlns="http://www.w3.org/2000/svg" color="rgb(109, 8, 8)" width="40" height="40" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/> </svg>
       <Card.Body>

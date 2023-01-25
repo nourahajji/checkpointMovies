@@ -3,7 +3,7 @@
 color: white;
   width: 1372px;
   height: 447px;
-  margin-top: -773px;
+  margin-top: -50px;
   padding: 61px;
  
 }
@@ -40,11 +40,9 @@ nav ul li  a:hover{
   transition: .3s;
 }
 
-#lom{
+#hhh{
   width: 109%;
-
   height: 282%;
- 
   margin-left: -1px;
 overflow: hidden;
 margin-top: -106px;
@@ -66,7 +64,7 @@ margin-top: -60px;
 }
 #title{
   color: #fff;
-  margin-top: 100px;
+  margin-top: -500px;
   margin-left: 149px;
   font-weight: bold;
 }
@@ -109,9 +107,12 @@ margin-left: 170px;
 }
 #sisi{
  
-  margin-left: 916px;
-    position: absolute;
-    top: -699px;
+ margin-left: 920px;
+ margin-top: -120px;
+}
+#mlo5{
+  position: absolute;
+  margin-left: 420px;
 }
 #volo{
   position: absolute;
@@ -172,10 +173,11 @@ margin-left: 170px;
 .ahmed{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: black;
   height: 902px;
   margin-top: -556px;
+  
 }
 #saf{
 position: absolute;
@@ -185,7 +187,7 @@ margin-top: 76px;
 .hlil h1{
   color: white;
  margin-left: -1047px;
-  margin-top: 471px;
+  margin-top: 600px;
   position: absolute;
   
 }
@@ -498,4 +500,97 @@ color: white;
 .moll{
   margin-left: 796px;
   color: white;
+}
+.ciel{
+  background-color: black;
+  height: 800px;
+}
+.ciel img{
+  margin-top: 200px;
+  height: 500px;
+  width: 400px;
+  margin-left: 100px;
+}
+.ciel h1{
+  color: white; 
+  margin-left: 550px;
+  margin-top: -460px;
+  display: flex;
+}
+.ciel p{
+  color: white;
+  margin-top: 100px;
+  margin-left: 550px;
+}
+#jad{
+  color: white;
+  background-color:rgb(109, 8, 8) ;
+  margin-left: 550px;
+
+}
+#wiem{
+  color: rgb(109, 8, 8);
+  margin-left: 20px;
+}
+#oudi{
+  color: white;
+  margin-left: 660px;
+  margin-top: -25px;
+}
+#aich{
+  color: rgb(109, 8, 8);
+  margin-left: 700px;
+  margin-top: -80px;
+}
+#kouss{
+  color:white;
+  margin-left: 730px;
+  margin-top: -63px;
+
+}
+#alo{
+color: white;
+font-weight: bold;
+text-align: center;
+margin-left: 452px;
+
+}
+#alaa{
+  margin-left: 1000px;
+ background-color: rgb(109, 8, 8);
+ border-radius: 10px;
+ color: white;
+ width: 100px;
+ height: 50px;
+ margin-top: -55px;
+ position: absolute;
+ border:rgb(109, 8, 8) ;
+}
+#khaw{
+  background-color: rgb(109, 8, 8);
+  color: white;
+  margin-left: 367px;
+  margin-top: 105px;
+  position: absolute;
+  width: 125px;
+  height: 55px;
+}
+#khaw:hover{
+  background-color: transparent;
+}
+#alaa:hover{
+  background-color: transparent;
+}
+#ayoub{
+  color: white;
+  margin-left: 750px;
+  margin-top: -45px;
+  background-color:  rgb(109, 8, 8);
+  position: absolute;
+  height: 40px;
+  width: 46px;
+
+}
+.ahmed a{
+  text-decoration: none;
 }
